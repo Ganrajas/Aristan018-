@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> www.aristan.com</title>
+  <style type="text/css">
+     body{
+      
+      margin: 0px;
+    }
+    #brandname{
+      background:linear-gradient(to right,deeppink,gold,limegreen,blue,purple);
+      padding:10px;
+      color: white;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+      position: sticky;
+      top: 0;
+      left: 0;
+    }
+    #tagline{
+      margin-top: -10px;
+    }
+    form{
+      margin-left: 20%;
+      background-color: #91F5F5;
+      width: 50%;
+      text-align: center;
+      margin-top: 40px; 
+    }
+    .inputclass{
+      width: 100%;
+      border-radius: 2px;
+      padding:5px;
+      border: none;
+
+    }
+    .btnclass{
+      width: 40%;
+      border-radius: 4px;
+      padding:5px;
+      border: none;
+      background-color: #000123;
+      color: white;
+      padding: 5px;
+    }
+    .btnclass:hover{
+        background-color: orangered;
+        cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>  
+    <div id="brandname">
+    <h1> Aristan CRM - Vendor Payment Entry </h1>
+    <p id="tagline"> Education Empowerment </p>
+    </div>
+
+    <form name="f1" method="post" action="VendorPayEntry.jsp" autocomplete="off">
+   <table cellpadding="5" align="center">
+    
+    <tr>
+      <td> Vendor Paymant Date</td>
+      <td> <input type="date" name="vpdate" class="inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> First Name</td>
+      <td> <input type="text" name="fname" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Last Name</td>
+      <td> <input type="text" name="lname" class=" inputclass"></td>
+    </tr>
+    
+    <tr>
+      <td> Vendor Company</td>
+      <td> <input type="text" name="vcomp" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Amount</td>
+      <td> <input type="text" name="amt" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> PayBy</td>
+      <td> 
+          <input type="radio" name="pay"  value="UPI">UPI
+          <input type="radio" name="pay"  value="NBANK">NetBanking
+          <input type="radio" name="pay"  value="CASH">Cash
+      </td>
+    </tr>
+
+    
+    <tr>
+      <td colspan="2" align="center"> 
+          <input type="submit" value="Submit Entry" class="btnclass">
+          <input type="reset" value="Reset" class="btnclass">
+      </td>
+    </tr>
+    
+   </table>
+  </form>
+            
+</body>
+</html>

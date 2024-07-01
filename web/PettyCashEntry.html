@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> www.aristan.com</title>
+  <style type="text/css">
+            body{
+              margin: 0px;
+              font-family: bold;
+            }
+            #brandname{
+              background: linear-gradient(to right,deeppink,gold,limegreen,blue,purple);
+              padding:20px;
+              width: 100%;
+              color: white;
+              position: sticky;
+              top: 0;
+              left: 0;
+              box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+            }
+            #tagline{
+              margin-top: -10px;
+            }
+            .main{
+              background-color: rgba(0,0,0,0.3);
+              margin-top: -20px;
+              text-align: center;
+              color: white;
+              width: 100%;
+              padding-bottom: 20px;     
+            }
+            h1{
+              padding-top: 10px;
+              margin-top: -10px;
+              text-shadow: 2px 2px black;
+            }
+            form{
+              margin-left: 20%;
+              background-color: #91F5F5;
+              width: 50%;
+              text-align: center;
+              margin-top: 40px; 
+            }
+            .inputclass{
+              width: 100%;
+              border-radius: 2px;
+              padding:5px;
+              border: none;
+
+            }
+            .btnclass{
+              width: 40%;
+              border-radius: 4px;
+              padding:5px;
+              border: none;
+              background-color: #000123;
+              color: white;
+              padding: 5px;
+            }
+            .btnclass:hover{
+                background-color: orangered;
+                cursor: pointer;
+            }
+
+
+  </style>
+  <script>
+      function Calculate_bill()
+      {
+          var qty=parseInt(document.f1.pqty.value);
+          var rate=parseInt(document.f1.prate.value);
+          
+          var bill=rate*qty;
+          
+          document.f1.bamt.value=bill;
+      }
+  </script>
+</head>
+<body>  
+    <div id="brandname">
+    <h1> Aristan CRM - Petty Cash Entry </h1>
+    <p id="tagline"> Education Empowerment </p>
+    </div>
+
+    <form name="f1" method="post" action="PettyCashEntry.jsp" autocomplete="off">
+   <table cellpadding="5" align="center">
+    
+    <tr>
+      <td>Purchase Date</td>
+      <td> <input type="date" name="pdate" class="inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Purchase Details</td>
+      <td> <input type="text" name="pdetail" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Purchase Quantity</td>
+      <td> <input type="text" name="pqty" class=" inputclass"></td>
+    </tr>
+    
+    <tr>
+      <td> Purchase Rate</td>
+      <td> <input type="text" name="prate" class=" inputclass" onkeyup="Calculate_bill()"></td>
+    </tr>
+
+    <tr>
+      <td>Bill Amount</td>
+      <td> <input type="text" name="bamt" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Purchase By</td>
+      <td> <input type="text" name="pby" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td>Approval By</td>
+      <td> <input type="text" name="aby" class=" inputclass"></td>
+    </tr>
+
+    
+    <tr>
+      <td colspan="2" align="center"> 
+          <input type="submit" value="Submit Entry" class="btnclass">
+          <input type="reset" value="Reset" class="btnclass">
+      </td>
+    </tr>
+    
+   </table>
+  </form>
+            
+</body>
+</html>

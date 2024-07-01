@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+  <title> www.aristan.com</title>
+  <style type="text/css">
+    body{     
+        margin: 0px;
+      }
+      #brandname{
+      background:linear-gradient(to right,deeppink,gold,limegreen,blue,purple);
+      padding: 15px;
+      color: white;
+      width: 100%;
+      position: Sticky;
+      top: 0;
+      left: 0;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+    }
+    #tagline{
+      margin-top: -10px;
+    }
+    .main{
+      background-color: rgba(0,0,0,0.3);
+      margin-top: -20px;
+      text-align: center;
+      color: white;
+      width: 100%;
+      padding-bottom: 20px;     
+    }
+    h2{
+      padding-top: -25px;
+      text-shadow: 1px 1px black;
+      color: red;
+      font-size: 33px;
+    }
+    h1{
+      padding-top: 10px;
+      margin-top: -10px;
+      text-shadow: 1px 2px black;
+    }
+    form{
+      margin-left: 25%;
+      background-color: #91F5F5;
+      width: 50%;
+      text-align: center;
+      margin-top: 40px; 
+    }
+    .inputclass{
+      width: 70%;
+      border-radius: 2px;
+      padding:5px;
+      border: none;
+
+    }
+    .btnclass{
+      width: 25%;
+      border-radius:3px;
+      padding:7px;
+      border: none;
+      background-color: #000123;
+      color: white;
+     
+    }
+    .btnclass:hover{
+        background-color: orangered;
+        cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>  
+    <div id="brandname">
+    <h1> Aristan CRM </h1>
+    <p id="tagline"> Education Empowerment </p>
+    </div>
+
+    
+    <form name="f1" method="post" action="TrainingDemo.jsp" autocomplete="off">
+   <table cellpadding="5" align="center" width="100%" >
+    <tr>
+      <th colspan="2">
+        <h2> Training Demo </h2>
+      </th>
+    </tr>
+
+    <tr>
+      <td> Date</td>
+      <td> <input type="date" name="idate" class=" inputclass"></td>
+    </tr>
+    
+    <tr>
+      <td> Candidate Name</td>
+      <td> <input type="text" name="cname" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Technology</td>
+      <td> <input type="text" name="tech" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Time</td>
+      <td> <input type="time" name="t_time" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Schedule By</td>
+      <td> <input type="text" name="sby" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+      <td> Trainer Name</td>
+      <td> <input type="text" name="tname" class=" inputclass"></td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+        <input type="submit" value="Submit" class="btnclass">
+        <input type="reset" value=" Reset" class="btnclass">
+     
+           <a href="TrainingDemo.jsp">
+        <button class="btn btnclass"> <span class="glyphicon glyphicon-plus"></span> Display Demo Batch </button>
+    </a>    
+    
+      </td>
+    </tr>
+    
+   </table>
+  </form>
+            
+</body>
+</html>

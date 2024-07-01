@@ -1,0 +1,54 @@
+<html>
+ <head>
+     <title></title>
+    <style>
+        button{
+           background:linear-gradient(to right,deeppink,gold,limegreen,blue,purple);
+            padding: 10px 30px;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 3px; 
+        }
+        button:hover{
+            background-color: deeppink;
+            color: white;
+            cursor: pointer;
+        }
+            #brandname{
+      background:linear-gradient(to right,deeppink,gold,limegreen,blue,purple);
+      padding:5px;
+      color: white; 
+    }
+    #tagline{
+      margin-top: -20px;
+    }
+
+    .mytextbox{
+            padding: 7px;
+            width: 40%;
+            border: 1px solid grey;
+    }
+    </style>
+ </head>
+<body>
+<center>
+
+    <div id="brandname">
+        <h2> Aristan CRM </h2>
+        <p id="tagline"> Education Empowerment </p>
+    </div>
+    <br><br>
+    <form method="post" action="scorecard.jsp" autocomplete="off">
+  
+      <input type="text" name="rid"  placeholder="Search by Registration Id" class="mytextbox">
+
+      <button type="submit">Search</button>
+
+     </form>
+
+</center>
+
+</body>
+</html>
+

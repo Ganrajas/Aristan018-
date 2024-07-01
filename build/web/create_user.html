@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> www.aristan.com</title>
+  <style type="text/css">
+     body{
+      background-image: url("back2.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0px;
+    }
+    #brandname{
+      background: linear-gradient(to right , deeppink , gold , limegreen , blue , purple);
+      padding:20px;
+      color: white;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+    }
+    #tagline{
+      margin-top: -10px;
+    }
+    .main{
+      background-color: rgba(0,0,0,0.3);
+      margin-top: -20px;
+      text-align: center;
+      color: white;
+      width: 100%;
+      padding-bottom: 20px;     
+    }
+    h2{
+     // padding-top: 20px;
+      color: black;
+      text-shadow: 1px 1px white;
+    }
+    h1{
+      padding-top: 10px;
+      margin-top: -10px;
+      text-shadow: 2px 3px black;
+    }
+    form{
+      margin-left: 30%;
+      background-color: #91F5F5;
+      width: 40%;
+      text-align: center;
+      margin-top: 40px; 
+    }
+    .inputclass{
+      width: 100%;
+      border-radius: 2px;
+      padding:5px;
+      border: none;
+    }
+    .btnclass{
+      width: 90%;
+      border-radius: 10px;
+      padding:5px;
+      border: none;
+      background-color: #000123;
+      color: white;
+      padding: 7px;
+    }
+    .btnclass:hover{
+        background-color: orangered;
+        cursor: pointer;
+    }
+
+  </style>
+  <script>
+      function validation_fun()
+      {
+          if(document.f1.fname.value==="")
+        {
+          alert("Please enter the first name");
+          document.f1.fname.focus();
+          return false;
+        }
+        if(document.f1.lname.value==="")
+        {
+                alert("please enter the Last name");
+                document.f1.lname.focus();
+                return false;
+        }
+        if(document.f1.email.value==="")
+        {
+                alert("Please enter email");
+                document.f1.email.focus();
+                return false;
+        }
+        if(document.f1.uname.value==="")
+        {
+                alert("Please enter user name");
+                document.f1.uname.focus();
+                return false;
+        }
+        if(document.f1.pass.value==="")
+        {
+                alert("Please enter password");
+                document.f1.pass.focus();
+                return false;
+        }
+      }
+      
+      function show_pass()
+      {
+          var show=document.getElementById('pass1');
+          
+          if(show.type==='password')
+          {
+              show.type='text';
+          }
+          else
+          {
+              show.type='password';
+          }
+      }
+  </script>
+</head>
+<body>  
+    <div id="brandname">
+    <h1> Aristan CRM </h1>
+    <p id="tagline"> Education Empowerment </p>
+    </div>
+
+    <form name="f1" method="post" action="USER.jsp" autocomplete="off">
+   <table cellpadding="5" align="center">
+    <tr>
+      <th colspan="2">
+        <h2> Create CRM Users</h2>
+      </th>
+    </tr>
+
+    <tr>
+      <td> First Name</td>
+      <td> <input type="text" name="fname" class=" inputclass" ></td>
+    </tr>
+
+    <tr>
+      <td> Last Name</td>
+      <td> <input type="text" name="lname" class=" inputclass" ></td>
+    </tr>
+
+    <tr>
+      <td> Email</td>
+      <td> <input type="text" name="email" class=" inputclass" ></td>
+    </tr>
+
+    <tr>
+      <td> Username</td>
+      <td> <input type="text" name="uname" class=" inputclass" ></td>
+    </tr>
+
+    <tr>
+      <td> Password</td>
+      <td colspan="2"><input type="password" name="pass" class=" inputclass" id="pass1">
+          <input type="checkbox" onclick="show_pass()">Show password
+      </td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center"> <input type="submit" value="Create User" class="btnclass" onclick="return validation_fun()"></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"> <input type="reset" value=" Reset" class="btnclass"></td>
+    </tr>
+    
+   </table>
+  </form>
+            
+</body>
+</html>
