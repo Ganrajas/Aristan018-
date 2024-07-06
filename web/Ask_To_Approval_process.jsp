@@ -56,7 +56,6 @@
         margin-top: -10px;
     }
 
-
   </style>
 </head>
 <body>  
@@ -103,8 +102,7 @@
       <td> Approval Request By </td>
       <td> <input type="text" name="approval_req_by" class=" inputclass"></td>
     </tr>
-    
-    
+      
     <tr>
       <td colspan="2" align="center"> 
           <input type="submit" value="Submit Entry" class="btnclass">
